@@ -1,5 +1,10 @@
 <div id='container'>
   <ul>
-    <li ng-repeat="link as data.links"></li>
+    <li ng-repeat="links in data.links">{{links.url}}</li>
+    <li ng-repeat="links in data.links">{{links}}</li>
   </ul>
+
+  <form action="#/shorten">
+    <input type="submit" value="Go to Shorten">
+  </form>
 </div>

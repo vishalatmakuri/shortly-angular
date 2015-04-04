@@ -7,6 +7,7 @@ angular.module('shortly.shorten', [])
   }
 
   $scope.addLink = function() {
+    console.log($scope.link)
     $http.post('/api/links', {url : $scope.link.input})
       .then(function (res){
       })

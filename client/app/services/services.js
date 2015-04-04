@@ -9,14 +9,8 @@ angular.module('shortly.services', [])
       return res.data
     })
   }
-})
-
-
-.factory('Shorten', function ($http) {
 
 })
-
-
 .factory('Auth', function ($http, $location, $window) {
   // Don't touch this Auth service!!!
   // it is responsible for authenticating our user
